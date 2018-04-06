@@ -537,7 +537,7 @@ function isContentOverflowing(el) {
     return (el.clientHeight + 10 < el.scrollHeight);
 }
 
-// typically for <body> and <html>
+// typically for and <html>
 function overflowNotHidden(el) {
     var overflow = getComputedStyle(el, '').getPropertyValue('overflow-y');
     return (overflow !== 'hidden');
